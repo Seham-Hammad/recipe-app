@@ -22,6 +22,7 @@ class App extends React.Component {
            recipes: data.recipes
        })
     console.log(this.state.recipes);
+    console.log('Git test');
   }
   componentDidMount =() =>{
     /**grap the items stored in the local storage using localStorage.getItem()
@@ -34,6 +35,7 @@ class App extends React.Component {
     /** in ES6 if the name of the key and value of the state is the same then we can use one of them only,  this.setState({recipes: recipes}) */
 
     this.setState({recipes})
+  
   }
   componentDidUpdate =() =>{
     const recipes = JSON.stringify(this.state.recipes);
